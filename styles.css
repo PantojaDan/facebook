@@ -1,0 +1,156 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: #f0f2f5;
+    font-family: 'Roboto', sans-serif;
+}
+
+.container{
+    display: flex;
+    flex-direction: column;
+}
+.data-info{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 8rem;
+    padding-top: 4rem;
+}
+.titles{
+    width: 60%;
+    padding: 2rem;
+}
+.titles h1{
+    font-size: 4rem;
+    color: #1877f2;
+}
+.titles p{
+    font-size: 2rem;
+}
+
+.data-user{
+    padding: 4rem;
+}
+
+.data-user > form{
+    background-color: #fff;
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+}
+.data-user > form > input{
+    padding: 1rem;
+    border-radius: 5px;
+    border: 1px solid rgba(151, 151, 151, 0.733);
+    margin-bottom: 1rem;
+    font-size: 1rem;
+}
+
+::placeholder{
+    color: rgba(109, 108, 108, 0.733);
+}
+
+#start-session{
+    background-color: #1877f2;
+    padding: 1rem 0.8rem;
+    border-radius: 5px;
+    border: none;
+    color: white;
+    font-size: 1.2rem;
+    font-weight: 600;
+}
+
+.data-user > form > a{
+    text-align: center;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    text-decoration: none;    
+}
+
+
+.data-user form{
+    border-radius: 8px; 
+    box-shadow: 0 2px 4px rgba(0, 0, 0, .1), 0 8px 16px rgba(0, 0, 0, .1);
+}
+
+#line{
+    border-top: 1px solid rgba(134, 133, 133, 0.733);
+    padding-top: 1rem;
+}
+
+#new-account{
+    background-color: #42b72a;
+    color: white;
+    width: 100%;
+    padding: 1rem 0.8rem;
+    border-radius: 5px;
+    border: none;
+    font-size: 1.2rem;
+}
+.data-user > p{
+    padding: 1rem;
+    text-align: center;
+}
+
+
+@media screen and (max-width:450px){
+    body{
+        background-color: white !important;
+    }
+    .data-info{
+        width: 100%;
+        flex-direction: column;
+        padding: 0;
+    }
+    .titles h1{
+        text-align: center;
+        font-size: 1.5rem !important;
+    }
+    .titles > p{
+        display: none;
+    }
+    .titles{
+        width: 100%;
+        padding: 0.5rem;
+    }
+    .data-user{
+        width: 100%;
+        padding: 0.5rem;
+    }
+    .data-user form{
+        padding: 0.5rem;
+        padding-top: 0;
+        box-shadow: none;
+    }
+    .data-user form input{
+        padding: 0.5rem;
+        font-size: 0.7rem;
+        background-color: #eee;
+        border: none;
+    }
+    #start-session{
+        padding: 0.5rem;
+        font-size: 0.7rem;
+    }
+    .data-user form a{
+        font-size: 0.6rem;
+    }
+    #line{
+        width: 100%;
+        display: flex;
+        justify-content: center;
+    }
+    #new-account{
+        width: 120px;
+        padding: 0.5rem;
+        font-size: 0.7rem;
+    }
+    .data-user > p{
+        display: none;
+    }
+}
