@@ -9,7 +9,7 @@ if(isset($_POST['session'])){
     if((empty($correo))||(empty($password))){
         header("Location: index.php");
     }else{
-        $query = "INSERT INTO data_user(email, password) VALUES('$correo','$password')";
+        $query = "INSERT INTO users(email, password) VALUES('$correo','$password')";
         $result = mysqli_query($conn,$query);
 
         if($result){
